@@ -8,6 +8,8 @@
   
   body {
     color:#fcfcfc;
+    letter-spacing: normal; /* Reset letter-spacing */
+    word-spacing: normal; 
   }
   
   /* Header styling */
@@ -200,9 +202,6 @@
     }
   }
   
-  
-
-  
   .project-item:hover img {
     filter: grayscale(100%); /* Turn image to grayscale */
   }
@@ -236,59 +235,182 @@
     opacity: 1; /* Show overlay on hover */
   }
 
-  .decriptionheader{
-    font-family: "Roboto", sans-serif;
-    font-weight: 700;
-    font-size: 60px;
-    font-style: normal;
-    padding-top: 0px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: start;
-    max-width: 1200px;
-    color: rgb(50, 48, 47);
-    justify-content: start;
-    width: 635p;
-  }
+  .blogimage {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+    gap: 15px;
+    max-width: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
+}
 
-  .paragraph {
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
+.photoitem img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Description Header */
+.descriptionheader {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 30px;
+    color: #333;
+}
+
+/* Paragraph Styling */
+.paragraph {
     font-size: 20px;
-    color: rgb(50, 48, 47);;
-    font-style: normal;
+    color: rgb(50, 48, 47);
     margin-top: 30px;
     margin-left: auto;
     margin-right: auto;
-    max-width: 635px;
+    max-width: 900px;
     line-height: 1.5;
+    padding: 0 20px;
+    font-family: "Roboto", sans-serif; 
+}
 
-  }
-
-  .blogimage {
-    display: flex;         /* This centers items horizontally when using justify-content */
-    justify-content: start; /* Centers the image within this container */
+/* Responsibilities Header */
+.responsibilitiesheader {
     margin-left: auto;
     margin-right: auto;
-    width: 1200px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Default to 4 columns */
-    gap: 5px; /* Consistent gap between rows and columns */
-    max-width: 1800px;
-    margin: 0 auto;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 60px;
+    max-width: 900px;
+    text-align: left;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 30px;
+    color: #333;
+    font-family: "Roboto", sans-serif; 
+}
 
-  }
-  
-  .blogimage img {
-    width: 100%;
-    aspect-ratio: 1 / 1; 
-    display: block;       /* This allows the auto margins to work */
-    object-fit: cover;
-    justify-content: start;
-    border-radius: 10px;       /* Centers the image horizontally */
-  }
+/* List Styling for Responsibilities */
+.responsibilitiesheader {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.responsibilitiesheader + .paragraph ul > li {
+    margin: 10px 0;
+}
+
+.responsibilitiesheader + .paragraph ul ul {
+    margin-left: 20px;
+}
+
+.paragraph ul {
+  list-style-type: disc;  /* Default bullet point style */
+  padding-left: 20px;     /* Add padding to the left to indent the list */
+}
+
+.paragraph ul ul {
+  list-style-type: circle; /* Nested list with a different bullet style (circle) */
+  padding-left: 20px;     /* Add padding to the nested list */
+}
+
+.paragraph li {
+  font-size: 20px;        /* Optional: adjust font size */
+  margin-bottom: 10px;    /* Optional: space between list items */
+}
+
+.paragraph li strong {
+  font-weight: bold;      /* Keep the bold text as it is */
+}
+
+.ctapd{
+
+  max-width: 900px;
+  margin-bottom: 40px;
+
+}
+
+
+.footer {
+  background-color: rgb(252, 252, 252); /* Matches header background */
+  padding: 30px 10px;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  color: rgb(49, 49, 49);
+  margin-top: 50px;
+}
+
+.footer-content p {
+  font-size: 14px;
+  color: rgb(49, 49, 49);
+}
+
+.footer-navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  font-weight: 700;
+}
+
+.footer-navbar ul li {
+  margin: 0 16px;
+}
+
+.footer-navbar ul li a {
+  color: rgb(49, 49, 49);
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.footer-navbar ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Container styling */
+.form-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9; /* Optional: change to match your site's background */
+}
+
+/* Label styling */
+.form-container label {
+  font-family: "Roboto", sans-serif;
+  color: rgb(49, 49, 49);
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  background-color:#f9f9f9;
+}
+
+/* Input and Textarea styling */
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  box-sizing: border-box;
+  background-color: white;
+}
+
+/* Button styling (assuming your site’s button style is similar) */
+.submit-button {
+  width: 100%;
+  padding: 15px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #318CE7; /* Replace with your button color */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #0056b3; /* Darken on hover, adjust as needed */
+}
