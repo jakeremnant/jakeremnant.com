@@ -12,10 +12,17 @@
 <body>
 
   <header class="header">
-    <div class="logo">Jake Remnant</div>
-    <nav class="navbar">
+    <div class="logo">
+     <a href="index.html"> Jake Remnant </a>
+    </div>
+
+    <div class="hamburger" onclick="toggleMenu()">
+      ☰
+    </div>
+
+    <nav class="navbar" id="navbar">
       <ul>
-        <li><a href="#home">home</a></li>
+        <li><a href="index.html">home</a></li>
         <li><a href="#aboutme">about me</a></li>
         <li><a href="form.html">contact</a></li>
       </ul>
@@ -27,7 +34,7 @@
   <p>Below are the products I have designed and manufactured. <br>Click the product to learn more.</p>
   <a href="form.html" target="_blank">
   <div class="containerbutton">
-    <button>Let's Chat</button>
+    <button class=openingbutton> Let's Chat</button>
   </div>
   </a>
 </div>
@@ -42,7 +49,7 @@
   </a>
   </div>
   <div class="project-item">
-    <a href="stairlander.html" target="_blank">
+    <a href="art.html" target="_blank">
     <img src="/photos/artsideview.jpg" alt="Project 2">
     <div class="project-overlay">
       <p>Automated Rotary Turntable</p>
@@ -51,45 +58,57 @@
   </div>
 
   <div class="project-item">
+    <a href="collectormachine.html" target="_blank">
     <img src="/photos/collector.jpg" alt="Project 2">
     <div class="project-overlay">
       <p>Collector Machine</p>
     </div>
+  </a>
   </div>
 
   <div class="project-item">
+    <a href="minimagnetic.html" target="_blank">
     <img src="/photos/minimagside.jpg" alt="Project 2">
     <div class="project-overlay">
       <p>Mini Magnetic</p>
     </div>
+  </a>
   </div>
   
   <div class="project-item">
-    <img src="/photos/camshaftpinmachine.jpg" alt="Project 2">
+    <a href="camshaftmachine.html" target="_blank">
+    <img src="/photos/camshaftpinmachine.jpg" alt="camshaftmachine">
     <div class="project-overlay">
       <p>Automated Camshaft Machine</p>
     </div>
+  </a>
   </div>
 
   <div class="project-item">
+    <a href="econoloader.html" target="_blank">
     <img src="/photos/econoloader.jpg" alt="Project 2">
     <div class="project-overlay">
       <p>Econoloader</p>
     </div>
+  </a>
   </div>
 
   <div class="project-item">
-    <img src="/photos/gravityloadermodel.jpg alt="Project 2">
+    <a href="gravityfeed.html" target="_blank">
+    <img src="/photos/gravityfeedhopper.jpg" alt="Project 2">
     <div class="project-overlay">
       <p>Gravity Feed Conveyor</p>
     </div>
+  </a>
   </div>
 
   <div class="project-item">
+    <a href="rubberbeltloader.html" target="_blank">
     <img src="/photos/rubberbeltloader.jpg" alt="Project 2">
     <div class="project-overlay">
       <p>Rubber Belt Loader</p>
     </div>
+  </a>
   </div>
   
   <!-- Add more project items as needed, up to 9 for a 3x3 grid -->
@@ -100,14 +119,15 @@
       <p>&copy; 2024 Jake Remnant. All Rights Reserved.</p>
       <nav class="footer-navbar">
           <ul>
-              <li><a href="#privacy">Privacy Policy</a></li>
-              <li><a href="#terms">Terms of Service</a></li>
-              <li><a href="#contact">Contact</a></li>
+            <li><a href="index.html">home</a></li>
+            <li><a href="#aboutme">about me</a></li>
+            <li><a href="form.html">contact</a></li>
           </ul>
       </nav>
   </div>
 </footer>
 
+<script src="js/main.js"></script>
 
 </body>
 </html>
