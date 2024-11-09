@@ -487,3 +487,60 @@
 .submit-button:hover {
   background-color: #0056b3; /* Darken on hover, adjust as needed */
 }
+
+.stairimage-grid {
+  display: grid;       
+  grid-template-columns: 1fr 1fr;     
+  justify-content: center;                      
+  max-width: 1200px;                     
+  margin-left: auto;  
+  margin-right: auto; 
+  object-fit:contain;
+  gap: 10px;
+  padding: 20px;
+}
+
+.image-item{
+  aspect-ratio: 2/3;
+  justify-content: center;
+  overflow: hidden;
+
+}
+
+.image-item img {
+  width: 100%;                          /* Make image fill its container */
+  height: 100%;  
+  object-fit: cover;                       /* Maintain aspect ratio */
+  border-radius: 8px;                   /* Optional: rounded corners */
+}
+
+.jakestairdesign{
+  max-width: 800px;
+  object-fit: contain;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.jakestairdesign img{
+  height:100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.stairlandertext{
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 50px;
+  font-style: normal;
+  text-align: center;
+  max-width: 1200px;
+  color: rgb(50, 48, 47);
+  background-color: transparent;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
