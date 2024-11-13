@@ -141,6 +141,7 @@
     background-color:#318CE7;
     padding: 15px;
     border-radius: 15px;
+    position: relative;
   }
 
   .openingbutton:hover {
