@@ -105,8 +105,8 @@
     justify-content: center; /* Centers horizontally */
     align-items: center;     /* Centers vertically */
     text-align: center; 
-    height: 400px;
     padding-bottom: 20px;
+    padding-top: 20px;
   }
   
   h1 {
@@ -532,7 +532,7 @@
   border-radius: 8px;
 }
 
-.stairlandertext{
+.stairlandertext {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 50px;
